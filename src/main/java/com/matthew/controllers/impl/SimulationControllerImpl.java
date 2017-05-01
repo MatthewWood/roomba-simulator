@@ -31,6 +31,7 @@ public class SimulationControllerImpl implements SimulationController {
 
     @Override
     public ResponseEntity<RoombaSimulateResponse> simulateRoombaClean(@RequestBody RoombaSimulateRequest request, BindingResult result) {
+        //validate the request
         RoombaSimulateRequestValidator validator = new RoombaSimulateRequestValidator();
         validator.validate(request, result);
         if (result.hasErrors()) {

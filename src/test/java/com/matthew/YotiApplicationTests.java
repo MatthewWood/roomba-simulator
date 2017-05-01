@@ -23,8 +23,8 @@ public class YotiApplicationTests {
     private MockMvc mvc;
 
     @Test
-    public void getHello() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.post("/roomba/simulate").accept(MediaType.APPLICATION_JSON))
+    public void testEndpoint() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.post("/simulation").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 

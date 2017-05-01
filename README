@@ -11,8 +11,7 @@ Mongo instructions:
     Responses are saved to roombaSimulateResponse collection
 
 The application exposes 1 endpoint for the solution. Run the following curl to access it:
-    curl -X POST -H "Content-Type: application/json" -d '{"roomSize":[5, 5],"coords":[1, 2],"patches":[[1, 0],[2, 2],[2, 3]],"instructions":"NNESEESWNWW"}' localhost:8080/roomba/simulate
-
+    curl -X POST -H "Content-Type: application/json" -d '{"roomSize":[5, 5],"coords":[1, 2],"patches":[[1, 0],[2, 2],[2, 3]],"instructions":"NNESEESWNWW"}' localhost:8080/simulation
 The input data in the curl can be substituted out for different test cases.
 
 Developed and tested on Mac OS

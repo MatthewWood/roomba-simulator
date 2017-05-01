@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/roomba")
 public interface SimulationController {
 
-    @RequestMapping(path = "/simulate", method = RequestMethod.POST)
+    @RequestMapping(path = "/simulation", method = RequestMethod.POST)
     public ResponseEntity<RoombaSimulateResponse> simulateRoombaClean(@RequestBody RoombaSimulateRequest request, BindingResult result);
 }
